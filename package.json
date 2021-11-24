@@ -1,0 +1,58 @@
+{
+  "name": "habit-breaker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client/index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "build": "webpack",
+    "dev": "concurrently \"webpack serve --open\" \"nodemon server/server.js\" "
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "build",
+      "client"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.12.3",
+    "jsonwebtoken": "^8.5.1",
+    "mini-css-extract-plugin": "^2.4.4",
+    "prop-types": "^15.6.1",
+    "react": "^17.0.2",
+    "react-countdown-circle-timer": "^2.5.4",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.2",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.0",
+    "webpack": "^5.57.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.2.3",
+    "concurrently": "^6.0.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
+    "dotenv": "^10.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "isomorphic-fetch": "^3.0.0",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.7",
+    "postcss": "^8.3.11",
+    "postcss-loader": "^6.2.0",
+    "postcss-preset-env": "^7.0.0",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^2.2.19",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.5.0"
+  }
+}
